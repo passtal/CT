@@ -53,7 +53,6 @@ public class CalculatorTest {
 		System.out.println("평균 : " + calculator.avg(results));
 		sc.close();
 		
-		
 	}
 
 }

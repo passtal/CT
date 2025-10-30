@@ -19,7 +19,7 @@ public class codeup_1271 {
 			}
 		}
 				
-		System.out.print(max);		
+		System.out.print(max);
 		sc.close();
 	}	
 

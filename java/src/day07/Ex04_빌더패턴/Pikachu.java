@@ -21,27 +21,27 @@ public class Pikachu {
 		private int energy;
 		private String type;
 		private int level;
+
 		// 각 변수를 초기화하고 인스턴스를 반환하는 메소드 정의
 		public Builder energy(int energy) {
 			this.energy = energy;
 			return this;
 		}
-		
+
 		public Builder type(String type) {
 			this.type = type;
 			return this;
 		}
-		
+
 		public Builder level(int level) {
 			this.level = level;
 			return this;
 		}
-		
+
 		public Pikachu build() {
 			return new Pikachu(this);
 		}
 	}
-
 
 	@Override
 	public String toString() {

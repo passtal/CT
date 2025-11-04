@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class BubbleSort {
 
 	public static void bubbleSort(List<Integer> arr) {
         int n = arr.size();

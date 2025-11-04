@@ -2,7 +2,7 @@ package 정렬문제모음;
 
 import java.util.Scanner;
 
-public class Test3 {
+public class InsertionSort {
 
 	public static void insertionSort(int[] arr) {
 		int n = arr.length;

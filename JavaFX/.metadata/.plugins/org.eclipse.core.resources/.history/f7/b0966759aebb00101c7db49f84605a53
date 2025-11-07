@@ -1,0 +1,8 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+BorderPane {
+	-fx-background-color: pink;
+	-fx-border-color: mint;
+	-fx-border-width: 5px;
+	-fx-border-style: solid;
+}

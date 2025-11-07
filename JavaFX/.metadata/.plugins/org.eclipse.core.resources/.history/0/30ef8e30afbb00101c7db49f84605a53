@@ -1,0 +1,48 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+
+public class Main extends Application {
+	
+	private static Scene scene;
+	public static Stage stage;
+	
+	
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			
+			// 방법 1 - Scene에 css 지정
+//			BorderPane root = new BorderPane();
+//			Scene scene = new Scene(root,400,400);
+//			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//			primaryStage.setScene(scene);
+//			primaryStage.show();
+			
+			// 방법2 -FXML에 CSS 지정
+			stage = primaryStage;
+			
+			// Main.fxml 화면 파일을 로드
+			Parent container = loadFXML("Main");
+			
+			// Main.fxml 화면 레이아웃을 지정하여 Scene 생성
+			scene = new Scene(container);
+			
+			// Stage 에 Scene 등록
+			stage.setScene(scene);
+			
+			// Stage 출력
+			stage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

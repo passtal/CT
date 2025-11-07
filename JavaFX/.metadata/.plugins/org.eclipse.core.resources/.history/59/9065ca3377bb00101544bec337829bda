@@ -1,0 +1,16 @@
+package application;
+
+public class CController {
+	
+	@FXML
+	private TextField input;
+	
+	@FXML
+	void to (ActionEvent event) {
+		
+	}
+	
+	@Override
+	public void receiveData(Object )
+
+}

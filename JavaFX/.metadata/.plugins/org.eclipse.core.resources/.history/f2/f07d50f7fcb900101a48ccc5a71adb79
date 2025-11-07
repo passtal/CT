@@ -1,0 +1,31 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+
+public class Main extends Application {
+	
+	// 화면 A, B 객체 선언
+	private Scene sceneA, sceneB;
+	
+	@Override
+	public void start(Stage primaryStage) {
+		
+		// Scene A 생성
+		// 컨테이너 생성 (StackPane)
+		StackPane containerA = new StackPane();
+		
+		// 컨테이너를 지정하여 sceneA 생성
+		sceneA = new Scene(containerA = new StackPane());
+		
+		// 컨테이너 지정하여 sceneA 생성
+		sceneA = new Scene(containerA, 300, 200);
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

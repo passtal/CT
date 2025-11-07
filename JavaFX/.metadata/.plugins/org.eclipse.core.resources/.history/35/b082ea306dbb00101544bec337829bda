@@ -1,0 +1,11 @@
+package application;
+
+public class MainController {
+	
+	@FXML private Circle circle'
+	@FXML private Button down;
+	@FXML private Button left;
+	@FXML private Button right;
+	@FXML private Button up;
+
+}

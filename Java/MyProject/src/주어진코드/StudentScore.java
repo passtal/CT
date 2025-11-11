@@ -39,7 +39,7 @@ public class StudentScore {
 	static boolean[][] studentYn = new boolean[10][20];
 	
 	// 과목
-	static String[] subjects = {"국어", "영어", "수학", "과학", "자바"};
+	static String[] subjects = {"국어", "영어", "수학", "사회", "과학", "자바"};
 	static Scanner sc = new Scanner(System.in);
 	
 	/**
@@ -76,7 +76,6 @@ public class StudentScore {
 		}
 		
 		if (inputNo >= start && inputNo <= end) return inputNo;
-		inputNo = sc.nextInt();
 		return inputNo;
 		
 			
@@ -98,7 +97,6 @@ public class StudentScore {
 			System.out.print(msg);  
 		}
 		if( inputNo >= start && inputNo <= end ) return inputNo;
-		inputNo = sc.nextInt();
 		return inputNo;
 	}
 	
@@ -238,6 +236,7 @@ public class StudentScore {
 	/**
 	 * 2. 전체 조회
 	 */
+	
 	public static void listAll() {
 		
 		for (int i = 0; i < classStudentScore.length; i++) {

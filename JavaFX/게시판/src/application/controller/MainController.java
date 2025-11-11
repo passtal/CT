@@ -51,8 +51,10 @@ public class MainController {
     // 데이터 초기화
     @FXML
     void initialize() {
+    	
     	// 게시글 목록 요청
     	boardList = boardService.list();
+    	
     	// TableColumn에 Board 객체 매핑하기
     	colCheck.setCellValueFactory(new PropertyValueFactory<>("check"));
     	colNo.setCellValueFactory(new PropertyValueFactory<>("no"));
